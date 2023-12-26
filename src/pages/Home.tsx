@@ -1,15 +1,11 @@
 import React from "react";
-import "../styles/Home.scss";
+import SearchComponent from "../components/SearchComponent";
 
 const Home = () => {
+
   return (
     <>
-      <div className="container">
-        <span className="logo">z e v i</span>
-        <div className="search-container">
-          <input type="text" id="myInput" placeholder="Search" />
-        </div>
-      </div>
+      <SearchComponent searchBarTop={true} logoTop={true}/>
     </>
   );
 };
