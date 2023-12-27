@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@200&display=swap");
 
+$font-playfair: "Playfair Display", serif;
+$font-poppins: "Poppins", sans-serif;
+
 * {
-  font-family: "Playfair Display", serif;
-  font-family: "Poppins", sans-serif;
+  font-family: $font-playfair, serif; // Default font
+  font-family: $font-poppins; // Default font
 }
 
 .product-card {
@@ -15,10 +18,10 @@
   padding: 5px;
   position: relative;
   overflow: hidden;
-}
 
-.product-card:hover {
-  // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  &:hover {
+    // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 }
 
 .product-card-container {
@@ -42,10 +45,8 @@
   padding: 6px 10px 6px 10px;
   text-align: center;
   font-size: 14px;
-}
 
-@media (max-width: 500px) {
-  .view-product-popup {
+  @media (max-width: 500px) {
     bottom: 28%;
   }
 }
