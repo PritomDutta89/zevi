@@ -76,10 +76,10 @@
 .logo-product {
   font-family: "Montserrat", sans-serif;
   margin-top: 0px;
-  margin-right: 2%;
+  // margin-right: 2%;
   order: 1;
   color: rgb(68, 68, 68);
-  width: 20%;
+  width: 45px;
 }
 
 .search-container-product {
@@ -93,13 +93,14 @@
   background-position: right 15px center;
   background-repeat: no-repeat;
   background-size: 25px 25px;
-  width: 40%;
+  width: 45%;
   font-size: 16px;
   padding: 8px 15px 8px 15px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
   border-radius: 12px;
   outline: none;
+  margin-left: 6%;
 }
 
 #myInputProduct::placeholder {
@@ -110,5 +111,9 @@
   #myInputProduct {
     width: 58%;
     margin-left: 15%;
+  }
+
+  .logo-product {
+    width: 45%;
   }
 }
