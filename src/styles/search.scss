@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-$primary-font: "Montserrat", sans-serif;
-$search-icon: url(../images/searchicon.png);
-$search-icon-size: 25px;
-$search-input-border-color: #ddd;
-$search-input-border-radius: 14px;
-$search-input-padding: 14px 20px;
-
 * {
   margin: 0;
   padding: 0;
@@ -26,26 +19,34 @@ $search-input-padding: 14px 20px;
 }
 
 #myInput {
-  background-image: $search-icon;
+  background-image: url(../images/searchicon.png);
   background-position: right 15px center;
   background-repeat: no-repeat;
-  background-size: $search-icon-size $search-icon-size;
+  background-size: 25px 25px;
   width: 50%;
   font-size: 16px;
-  padding: $search-input-padding;
-  border: 1px solid $search-input-border-color;
+  padding: 14px 20px 14px 20px;
+  border: 1px solid #ddd;
   margin-bottom: 12px;
-  border-radius: $search-input-border-radius;
+  border-radius: 14px;
   outline: none;
-
-  &::placeholder {
-    color: rgb(172, 170, 170);
-  }
 }
 
-.logo,
+#myInput::placeholder {
+  color: rgb(172, 170, 170);
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 2%;
+  color: rgb(68, 68, 68);
+}
+
 .logo-product {
-  font-family: $primary-font;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: end;
   margin-top: 30px;
@@ -70,43 +71,38 @@ $search-input-padding: 14px 20px;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-
-  .logo-product {
-    font-family: $primary-font;
-    margin-top: 0px;
-    margin-right: 2%;
-    order: 1;
-    color: rgb(68, 68, 68);
-  }
-
-  .search-container-product {
-    margin-top: 20px;
-    flex-grow: 1;
-    text-align: center;
-  }
-
-  #myInputProduct {
-    background-image: $search-icon;
-    background-position: right 15px center;
-    background-repeat: no-repeat;
-    background-size: $search-icon-size $search-icon-size;
-    width: 40%;
-    font-size: 16px;
-    padding: 8px 15px 8px 15px;
-    border: 1px solid $search-input-border-color;
-    margin-bottom: 12px;
-    border-radius: $search-input-border-radius;
-    outline: none;
-
-    &::placeholder {
-      color: rgb(172, 170, 170);
-    }
-  }
 }
 
-
-@media (max-width: 400px) {
-  .container-product {
-    padding: 2px;
-  }
+.logo-product {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-right: 2%;
+  order: 1;
+  color: rgb(68, 68, 68);
+  width: 20%;
 }
+
+.search-container-product {
+  margin-top: 20px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#myInputProduct {
+  background-image: url(../images/searchicon.png);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  width: 40%;
+  font-size: 16px;
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  outline: none;
+}
+
+#myInputProduct::placeholder {
+  color: rgb(172, 170, 170);
+}
+
