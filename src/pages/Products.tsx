@@ -18,6 +18,11 @@ const Products = () => {
     setProducts(items);
   }
 
+  function filterBrandCheckboxes(data: any) {
+     console.log("hello: ", data);
+     setProducts(data)
+  }
+
   return (
     <>
       <SearchComponent searchBarTop={false} logoTop={false} />
@@ -36,7 +41,7 @@ const Products = () => {
               width: "13%"
             }}
           >
-            <FilterProduct/>
+            <FilterProduct brandCheckboxes={filterBrandCheckboxes}/>
           </div>
           <div
             className="all-products"

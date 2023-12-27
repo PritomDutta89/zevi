@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import cloth from "../images/cloth.webp";
 import "../styles/productCard.scss";
 import { Rating } from "react-simple-star-rating";
 // import Heart from "react-animated-heart";
@@ -36,7 +35,7 @@ const ProductCard = (props: any) => {
           />
         </div>
         <div className="product-card-container">
-          <p>{props.title}</p>
+          <b style={{textTransform: "capitalize"}}>{props.title}</b>
           <p>
             <span
               style={{
