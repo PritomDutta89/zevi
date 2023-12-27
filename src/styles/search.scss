@@ -106,3 +106,9 @@
   color: rgb(172, 170, 170);
 }
 
+@media (max-width: 300px) {
+  #myInputProduct {
+    width: 58%;
+    margin-left: 15%;
+  }
+}
