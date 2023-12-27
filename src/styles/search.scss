@@ -1,106 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.search-container{
+.search-container {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
 
-.search-container-product{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+.search-container-product {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
-  
+
 #myInput {
-    background-image: url(../images/searchicon.png); 
-    background-position: right 15px center; 
-    background-repeat: no-repeat; 
-    background-size: 25px 25px;
-    width: 50%;
-    font-size: 16px;
-    padding: 14px 20px 14px 20px; 
-    border: 1px solid #ddd; 
-    margin-bottom: 12px;
-    border-radius: 14px;
-    outline: none;
+  background-image: url(../images/searchicon.png);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  width: 50%;
+  font-size: 16px;
+  padding: 14px 20px 14px 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 14px;
+  outline: none;
 }
 
 #myInput::placeholder {
-    color: rgb(172, 170, 170); 
+  color: rgb(172, 170, 170);
 }
 
 .logo {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: end;
-    margin-top: 30px;
-    margin-right: 2%;
-    color: rgb(68, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 2%;
+  color: rgb(68, 68, 68);
 }
 
 .logo-product {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: end;
-    margin-top: 30px;
-    margin-right: 2%;
-    color: rgb(68, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 2%;
+  color: rgb(68, 68, 68);
 }
 
 .container {
-    background-image: url(../images/cloth.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    margin: 0; 
-    overflow: hidden;
+  background-image: url(../images/cloth.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 .container-product {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo-product {
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 0px;
-    margin-right: 2%;
-    order: 1;
-    color: rgb(68, 68, 68);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-right: 2%;
+  order: 1;
+  color: rgb(68, 68, 68);
 }
 
-.search-container-product{
-    margin-top: 20px;
-    flex-grow: 1; 
-    text-align: center; 
+.search-container-product {
+  margin-top: 20px;
+  flex-grow: 1;
+  text-align: center;
 }
 
 #myInputProduct {
-    background-image: url(../images/searchicon.png); 
-    background-position: right 15px center; 
-    background-repeat: no-repeat; 
-    background-size: 25px 25px;
-    width: 40%; 
-    font-size: 16px; 
-    padding: 8px 15px 8px 15px; 
-    border: 1px solid #ddd; 
-    margin-bottom: 12px; 
-    border-radius: 12px;
-    outline: none;
+  background-image: url(../images/searchicon.png);
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  width: 40%;
+  font-size: 16px;
+  padding: 8px 15px 8px 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  outline: none;
 }
 
 #myInputProduct::placeholder {
-    color: rgb(172, 170, 170); 
+  color: rgb(172, 170, 170);
 }

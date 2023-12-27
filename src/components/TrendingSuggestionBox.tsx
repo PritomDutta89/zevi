@@ -17,12 +17,11 @@ const TrendingSuggestionBox = () => {
 
   async function fetchAllProducts() {
     //fetch all products
-     const items = await fetchProducts();
-     console.log(items)
-     setProducts(items);
+    const items = await fetchProducts();
+    setProducts(items);
 
-     //use for trending products
-     setTrendingProducts(items.slice(0, 5))
+    //use for trending products
+    setTrendingProducts(items.slice(0, 5));
   }
 
   async function fetchCategories()
@@ -47,8 +46,8 @@ const TrendingSuggestionBox = () => {
               
               <div className="trending-cards">
                 {
-                    trendingProducts.map((item: any)=>(
-                      <TrendingCards items={item}/>
+                    trendingProducts.map((item: any, index: number )=>(
+                      <TrendingCards items={item} key={index}/>
                     ))
                 }
               </div>
@@ -57,8 +56,8 @@ const TrendingSuggestionBox = () => {
                 <h5>Popular suggestions</h5>
                 <ul className="trending-lists">
                     {
-                        category.map((item: string, key: number)=>(
-                            <Link to={'/products'} style={customLinkStyle}><li className="list" key={key}>{item}</li></Link>
+                        category.map((item: string, index: number)=>(
+                            <Link to={'/products'} style={customLinkStyle} key={index}><li className="list" >{item}</li></Link>
                         ))
                     }
                 </ul>

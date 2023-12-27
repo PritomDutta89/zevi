@@ -1,45 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@200&display=swap");
 
-*{
-    font-family: 'Playfair Display', serif;
-    font-family: 'Poppins', sans-serif;
+* {
+  font-family: "Playfair Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .product-card {
-    transition: 0.3s;
-    width: 170px;
-    height: 46vh;
-    border-radius: 3px;
-    margin-right: 30px;
-    margin-left: 30px;
-    padding: 5px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .product-card:hover {
-    // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .product-card-container {
-    padding: 3px 1px;
-    font-size: 13px;
-  }
+  transition: 0.3s;
+  width: 170px;
+  height: 46vh;
+  border-radius: 3px;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .heart-icon{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-  }
+.product-card:hover {
+  // box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
+.product-card-container {
+  padding: 3px 1px;
+  font-size: 13px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.view-product-popup {
+  position: absolute;
+  bottom: 75px;
+  left: 5.5px;
+  width: 94%;
+  background-color: rgba(123, 142, 226, 0.8);
+  color: white;
+  padding: 6px 10px 6px 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
   .view-product-popup {
-    position: absolute;
-    bottom: 75px;
-    left: 5.5px;
-    width: 94%;
-    background-color: rgba(123, 142, 226, 0.8);
-    color: white;
-    padding: 6px 10px 6px 10px;
-    text-align: center;
-    font-size: 14px;
+    bottom: 28%;
   }
+}

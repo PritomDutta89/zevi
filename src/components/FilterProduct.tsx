@@ -108,7 +108,6 @@ const FilterProduct = (props: any) => {
 
   //using lifting up state for forwarding data child component to parent component
   useEffect(() => {
-    console.log("filteredProducts: ", filteredProducts);
     props.brandCheckboxes(filteredProducts);
   }, [filteredProducts]);
 
@@ -116,16 +115,15 @@ const FilterProduct = (props: any) => {
     <>
       <div>
         <div style={{ marginBottom: 10 }}>
-          <div className="brand" onClick={() => setToggleArrowBrand(!toggleArrowBrand)}>
+          <div
+            className="brand"
+            onClick={() => setToggleArrowBrand(!toggleArrowBrand)}
+          >
             <b style={{ fontSize: 12 }}>BRAND</b>
             {toggleArrowBrand ? (
-              <ExpandMoreIcon
-                style={{ fontSize: 12 }}
-              />
+              <ExpandMoreIcon style={{ fontSize: 12 }} />
             ) : (
-              <KeyboardArrowUpIcon
-                style={{ fontSize: 12 }}
-              />
+              <KeyboardArrowUpIcon style={{ fontSize: 12 }} />
             )}
           </div>
           <div>
@@ -145,7 +143,9 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleBrandCheckboxChange(item)}
                     id={`brand-${index}`}
                   />
-                  <label className="checkboxes" htmlFor={`brand-${index}`}>{item}</label>
+                  <label className="checkboxes" htmlFor={`brand-${index}`}>
+                    {item}
+                  </label>
                 </div>
               ))}
           </div>
@@ -154,16 +154,15 @@ const FilterProduct = (props: any) => {
         <hr className="horizontal-line" />
 
         <div style={{ marginBottom: 10 }}>
-          <div className="brand" onClick={() => setToggleArrowPrice(!toggleArrowPrice)}>
+          <div
+            className="brand"
+            onClick={() => setToggleArrowPrice(!toggleArrowPrice)}
+          >
             <b style={{ fontSize: 12 }}>PRICE RANGE</b>
             {toggleArrowPrice ? (
-              <ExpandMoreIcon
-                style={{ fontSize: 12 }}
-              />
+              <ExpandMoreIcon style={{ fontSize: 12 }} />
             ) : (
-              <KeyboardArrowUpIcon
-                style={{ fontSize: 12 }}
-              />
+              <KeyboardArrowUpIcon style={{ fontSize: 12 }} />
             )}
           </div>
 
@@ -183,7 +182,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handlePriceCheckboxChange("Under500")}
                     id="price-1"
                   />
-                  <label className="checkboxes" style={{ marginTop: 2 }} htmlFor="price-1">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 2 }}
+                    htmlFor="price-1"
+                  >
                     Under 500
                   </label>
                 </div>
@@ -194,7 +197,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handlePriceCheckboxChange("1000To3000")}
                     id="price-2"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="price-2">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="price-2"
+                  >
                     600 To 3000
                   </label>
                 </div>
@@ -206,16 +213,15 @@ const FilterProduct = (props: any) => {
         <hr className="horizontal-line" />
 
         <div>
-          <div className="brand" onClick={() => setToggleArrowRating(!toggleArrowRating)}>
+          <div
+            className="brand"
+            onClick={() => setToggleArrowRating(!toggleArrowRating)}
+          >
             <b style={{ fontSize: 12 }}>RATINGS</b>
             {toggleArrowRating ? (
-              <ExpandMoreIcon
-                style={{ fontSize: 12 }}
-              />
+              <ExpandMoreIcon style={{ fontSize: 12 }} />
             ) : (
-              <KeyboardArrowUpIcon
-                style={{ fontSize: 12 }}
-              />
+              <KeyboardArrowUpIcon style={{ fontSize: 12 }} />
             )}
           </div>
           <div>
@@ -234,7 +240,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleRatingCheckboxChange(5)}
                     id="rating-5"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="rating-5">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="rating-5"
+                  >
                     <Rating initialValue={5} size={13} readonly={true} />
                   </label>
                 </div>
@@ -251,7 +261,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleRatingCheckboxChange(4)}
                     id="rating-4"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="rating-4">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="rating-4"
+                  >
                     <Rating initialValue={4} size={13} readonly={true} />
                   </label>
                 </div>
@@ -268,7 +282,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleRatingCheckboxChange(3)}
                     id="rating-3"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="rating-3">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="rating-3"
+                  >
                     <Rating initialValue={3} size={13} readonly={true} />
                   </label>
                 </div>
@@ -285,7 +303,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleRatingCheckboxChange(2)}
                     id="rating-2"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="rating-2">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="rating-2"
+                  >
                     <Rating initialValue={2} size={13} readonly={true} />
                   </label>
                 </div>
@@ -302,7 +324,11 @@ const FilterProduct = (props: any) => {
                     onChange={() => handleRatingCheckboxChange(1)}
                     id="rating-1"
                   />
-                  <label className="checkboxes" style={{ marginTop: 4 }} htmlFor="rating-1">
+                  <label
+                    className="checkboxes"
+                    style={{ marginTop: 4 }}
+                    htmlFor="rating-1"
+                  >
                     <Rating initialValue={1} size={13} readonly={true} />
                   </label>
                 </div>

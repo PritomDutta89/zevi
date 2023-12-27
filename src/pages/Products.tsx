@@ -19,8 +19,7 @@ const Products = () => {
   }
 
   function filterBrandCheckboxes(data: any) {
-     console.log("hello: ", data);
-     setProducts(data)
+    setProducts(data);
   }
 
   return (
@@ -36,27 +35,20 @@ const Products = () => {
             padding: 0,
           }}
         >
-          <div
-            style={{
-              width: "13%"
-            }}
-          >
-            <FilterProduct brandCheckboxes={filterBrandCheckboxes}/>
+          <div className="filter-width">
+            <FilterProduct brandCheckboxes={filterBrandCheckboxes} />
           </div>
           <div
             className="all-products"
-            style={{
-              width: "82%",
-              marginLeft: "15PX"
-            }}
           >
-            {products.map((product: any) => (
+            {products.map((product: any, index:number) => (
               <ProductCard
                 image={product.image}
                 title={product.category}
                 rating={product.rating.rate}
                 count={product.rating.count}
                 price={product.price}
+                key={index}
               />
             ))}
           </div>

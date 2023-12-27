@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const TrendingCards = (props: any) => {
   const customLinkStyle = {
     textDecoration: "none",
-    color: "inherit", // Use the default text color
+    color: "inherit",
   };
 
   return (
@@ -15,7 +15,7 @@ const TrendingCards = (props: any) => {
           <img
             src={props.items.image}
             alt="Avatar"
-            style={{ width: "100%", height: "24vh", borderRadius: 3 }}
+            className="trending-product-image"
           />
           <div className="card-container">
             <p>{props.items.category}</p>
