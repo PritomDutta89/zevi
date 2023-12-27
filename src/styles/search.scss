@@ -19,21 +19,21 @@
 }
   
 #myInput {
-    background-image: url(../images/searchicon.png); /* Add a search icon to input */
-    background-position: right 15px center; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-image: url(../images/searchicon.png); 
+    background-position: right 15px center; 
+    background-repeat: no-repeat; 
     background-size: 25px 25px;
-    width: 50%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 14px 20px 14px 20px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
+    width: 50%;
+    font-size: 16px;
+    padding: 14px 20px 14px 20px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px;
     border-radius: 14px;
     outline: none;
 }
 
 #myInput::placeholder {
-    color: rgb(172, 170, 170); /* Replace 'your-desired-color' with the color you want */
+    color: rgb(172, 170, 170); 
 }
 
 .logo {
@@ -59,19 +59,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center; 
-    background-attachment: fixed; /* Optional: Makes the background fixed while scrolling */
+    background-attachment: fixed;
     width: 100vw;
     height: 100vh;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
     overflow: hidden;
 }
 
 .container-product {
-    // display: flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px; /* Add padding for spacing */
+    padding: 10px; 
 }
 
 .logo-product {
@@ -84,24 +83,24 @@
 
 .search-container-product{
     margin-top: 20px;
-    flex-grow: 1; /* Allow the search container to grow and take available space */
-    text-align: center; /* Center the search input */
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 #myInputProduct {
-    background-image: url(../images/searchicon.png); /* Add a search icon to input */
-    background-position: right 15px center; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-image: url(../images/searchicon.png); 
+    background-position: right 15px center; 
+    background-repeat: no-repeat; 
     background-size: 25px 25px;
-    width: 40%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 8px 15px 8px 15px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
+    width: 40%; 
+    font-size: 16px; 
+    padding: 8px 15px 8px 15px; 
+    border: 1px solid #ddd; 
     margin-bottom: 12px; 
     border-radius: 12px;
     outline: none;
 }
 
 #myInputProduct::placeholder {
-    color: rgb(172, 170, 170); /* Replace 'your-desired-color' with the color you want */
+    color: rgb(172, 170, 170); 
 }
