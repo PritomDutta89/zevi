@@ -4,13 +4,8 @@ import { Rating } from "react-simple-star-rating";
 import Heart from "@react-sandbox/heart";
 
 const ProductCard = (props: any) => {
-  const [rating, setRating] = useState(0);
   const [active, setActive] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-  useEffect(() => {
-    setRating(props.rating);
-  }, []);
 
   return (
     <>
@@ -51,7 +46,7 @@ const ProductCard = (props: any) => {
             </span>
           </p>
           <div style={{ marginLeft: -1.3, display: "flex" }}>
-            <Rating initialValue={rating} size={13} readonly={true} />
+            <Rating initialValue={Math.ceil(props.rating)} size={13} readonly={true} />
             <span style={{ marginTop: 3, marginLeft: 2, fontSize: 9 }}>
               {props.count}
             </span>

@@ -28,6 +28,12 @@ const TrendingSuggestionBox = () => {
   {
     //fetch all categories
     const categories = await productCategory();
+
+    if(categories.length===0)
+    {
+      alert("Error fetching products.....Please refresh the page")
+    }
+
     setCategory(categories);
   }
 

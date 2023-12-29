@@ -35,6 +35,12 @@ const FilterProduct = (props: any) => {
   //fetch all categories
   async function fetchCategories() {
     const categories = await productCategory();
+
+    if(categories.length===0)
+    {
+      alert("Error fetching products.....Please refresh the page")
+    }
+
     setCategory(categories);
   }
 
@@ -97,8 +103,9 @@ const FilterProduct = (props: any) => {
 
     //update with selected rating checkboxes
     if (selectedRatingFilter.length > 0) {
-      filteredByCategory = filteredByCategory.filter((product: any) =>
-        selectedRatingFilter.includes(Math.floor(product.rating.rate))
+      filteredByCategory = filteredByCategory.filter((product: any) =>{
+        return selectedRatingFilter.includes(Math.ceil(product.rating.rate))
+      }
       );
     }
 
@@ -202,7 +209,7 @@ const FilterProduct = (props: any) => {
                     style={{ marginTop: 4 }}
                     htmlFor="price-2"
                   >
-                    600 To 3000
+                    500 To 3000
                   </label>
                 </div>
               </div>

@@ -15,6 +15,10 @@ const Products = () => {
   async function fetchAllProducts() {
     //fetch all products
     const items = await fetchProducts();
+    if(items.length===0)
+    {
+      alert("Error fetching products.....Please refresh the page")
+    }
     setProducts(items);
   }
 
@@ -50,7 +54,8 @@ const Products = () => {
                 price={product.price}
                 key={index}
               />
-            ))}
+            ))
+           }
           </div>
         </div>
       </div>

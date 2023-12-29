@@ -5,6 +5,7 @@ const fetchProducts = async () => {
     return products;
   } catch (error) {
     console.error("Error fetching products:", error);
+    // alert("Error fetching products.....Please refresh the page")
     return [];
   }
 };
